@@ -1,15 +1,6 @@
 version: '3'
 
 services:
-  
-  pma:
-    image: phpmyadmin/phpmyadmin
-    ports:
-      - "1231:80"
-    environment:
-      PMA_ARBITRARY: 1
-    links:
-      - db
 
   db:
     image: mysql:8
